@@ -40,4 +40,4 @@
 ✔️ Bootstrap 5 – Ensuring mobile-friendly and responsive design.
 
 # 📸 Project Preview :
-<img width="100%" src="./amazon_clone.png">
+<img width="100%" src="./E-Commerce_Website.png">
