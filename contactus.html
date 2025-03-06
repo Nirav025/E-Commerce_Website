@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="shortcut icon" href="images/ss.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <!-- font awasome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- google font link -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Courgette&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Kenia&family=Mate+SC&family=Playwrite+HR+Lijeva:wght@100..400&family=Protest+Revolution&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .logo {
+      font-family: "Mate SC", serif;
+    }
+
+    .active {
+      border-bottom: solid 1.5px red;
+      border-radius: 5px;
+    }
+
+
+
+    .searchbar {
+      width: 400px;
+    }
+
+    .navimg:hover {
+      cursor: pointer;
+    }
+
+
+
+    /* css for dropdownmenu hover */
+
+    .dropdown-menu>li>a:hover{
+       background-color: black;
+       border-bottom:solid 1px white ;
+       border-radius: 5px;
+     }
+
+
+
+
+
+
+    @media screen and (min-width:992px) {
+
+      .searchbar {
+        margin-left: 100px;
+        margin-right: 20px;
+
+      }
+
+      .navbtns {
+
+        margin-left: 20px;
+      }
+
+      .navimg {
+        margin-right: 50px;
+        width: 120px;
+        height: 30px;
+      }
+
+    }
+
+
+    @media screen and (max-width:992px) {
+
+      .searchbar {
+        width: 70vw;
+      }
+
+      .logo {
+        width: 100%;
+        margin: auto;
+
+      }
+
+      .navimg {
+        display: none;
+      }
+
+    }
+
+
+    @media screen and (max-width:400px) {
+
+      .navbar-toggler {
+        scale: 0.9;
+      }
+
+      .searchbar {
+        width: 70vw;
+      }
+
+    }
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    /* css for footer */
+
+    footer {
+      /* margin-top: 50px; */
+      width: 100%;
+      /* height: 350px; */
+      height: auto;
+      background-color: #FFFFFF;
+      display: flex;
+      color: black;
+      justify-content: space-around;
+      /* align-items: center; */
+    }
+
+
+    .ful {
+      margin-top: 50px;
+    }
+
+    .iful {
+      margin-top: 50px;
+    }
+
+
+    .ful>p {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px;
+
+    }
+
+    .iful>p {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px;
+
+    }
+
+    .ful>div {
+      font-size: 13px;
+      margin-top: 7px;
+    }
+
+    .iful>div {
+      font-size: 13px;
+      margin-top: 7px;
+    }
+
+
+    .ful>div:hover {
+      cursor: pointer;
+      border-bottom: solid 1.5px red;
+    }
+
+    .iful>div:hover {
+      cursor: pointer;
+    }
+
+
+    .footertext>a {
+      text-decoration: none;
+      color: black;
+    }
+
+
+
+
+
+
+
+
+    /* css for footer input */
+
+    .mail {
+      display: flex;
+    }
+
+    .mail-input {
+      font-size: 12px;
+      width: 200px;
+      height: 30px;
+      padding: 10px;
+      border: none;
+      border-left: 1px solid;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+
+    .mail-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      background-color: white;
+      border: none;
+      border-right: 1px solid;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+    }
+
+    .fa-paper-plane {
+      font-size: 12px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .fa-paper-plane:hover {
+      cursor: pointer;
+      transition: ease-in-out 0.2s;
+      transform: scale(1.3);
+    }
+
+
+
+
+
+    /* css for follow us section */
+    .follow {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+
+    .fa-square-facebook {
+      font-size: 30px;
+      color: black;
+      margin-right: 20px;
+    }
+
+
+    .fa-square-instagram {
+      font-size: 30px;
+      color: black;
+      margin-right: 20px;
+    }
+
+
+    .fa-square-x-twitter {
+      font-size: 30px;
+      color: black;
+      margin-right: 20px;
+    }
+
+
+    .fa-linkedin {
+      font-size: 30px;
+      color: black;
+      /* margin-right: 20px; */
+    }
+
+
+    /* css for last myname */
+
+    .last {
+      width: 100%;
+      height: auto;
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .designby {
+      height: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: black;
+      font-size: 13px;
+      text-align: center;
+    }
+
+
+    @media (max-width: 600px) {
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .fcol {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .ful {
+        padding-left: 0;
+      }
+
+      .iful {
+        padding-left: 0;
+      }
+
+    }
+
+
+
+    @media (max-width: 600px) {
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .fcol {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .ful {
+        padding-left: 0;
+      }
+
+      .iful {
+        padding-left: 0;
+      }
+
+    }
+
+
+    .extrafooter {
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: start;
+      width: 100%;
+      background-color: #F5F5F5;
+    }
+
+    .exfootimg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+    }
+
+    .exfootimgs {
+      margin-bottom: 20px;
+    }
+
+    .exfoothead {
+      margin-top: 20px;
+    }
+
+    @media (max-width:768px) {
+      .extrafooter {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .exfootimg {
+        width: 100%;
+      }
+
+     
+      
+    }
+
+
+    /* css for form section */
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/contus&careers.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .contactusform{
+        width: 60%;
+        color: white;
+        background-color: rgba(137, 74, 63, 0.4); 
+        padding: 20px;
+        border-radius: 10px;
+       
+    }
+
+    .contactusform div{
+        width: 50%;
+      }
+
+      .button{
+        width: 48%;
+      }
+
+
+
+    @media (max-width:768px){
+      .contactusform{
+        width: 100%;
+      }
+
+      .contactusform div{
+        width: 80%;
+      }
+
+      .button{
+        
+          width: 49%
+        }
+
+
+    }
+
+
+
+
+    /* css for paginaton */
+  
+
+.pagi{
+ justify-content: center;
+ align-items: center;
+ padding-top: 15px;
+}
+
+
+.pagination{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+
+.pagination li>a{
+  margin: 8px;
+  border-radius: 50%;
+  background-color: #BF0028;
+  color: white;
+  border: none;
+
+}
+
+.pagination li>a:hover{
+  background-color: white;
+  color: #BF0028;
+  border: solid 1px #BF0028;
+
+}
+
+  
+
+
+
+#pactive{
+  background-color: white;
+  color: #BF0028;
+  border: solid 1px #BF0028;
+}
+ 
+
+
+ 
+
+
+
+   
+
+
+   
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="background-color: black; position: sticky; top: 0px; z-index: 3;">
+
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#" style="color: white;font-size: 20px;">Shopping Hub<i class="fa-solid fa-cart-shopping" style="margin-left: 10px;"></i></a>
+
+
+
+      <form class="d-flex searchbar" role="search">
+        <button class="btn" type="submit"
+          style="border-bottom: solid 1px black; border-top: solid 1px black; border-left: solid 1px black; border-top-right-radius: 0px;  border-bottom-right-radius: 0px ;border-top-left-radius: 20px;  border-bottom-left-radius: 20px ; background-color: #F0F0F0;"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <input class="form-control" type="search" placeholder="Search Products" aria-label="Search"
+          style="border: none; border-bottom: solid 1px black; border-top: solid 1px black; border-right: solid 1px black;  border-top-left-radius: 0px ;  border-bottom-left-radius: 0px ; border-top-right-radius: 20px ;  border-bottom-right-radius: 20px ; font-size: 15px; background-color: #F0F0F0;">
+
+      </form>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="color: white; border-radius: 20px;">
+        <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbtns">
+          <li class="nav-item ">
+            <a class="nav-link" aria-current="page" href="index.html" style="color: white; font-size: 15px;">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html" style="color: white; font-size: 15px;">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: white; font-size: 15px;">
+              PRODUCTS
+            </a>
+            <ul class="dropdown-menu" style="text-align: center; background-color: black;">
+              <li><a class="dropdown-item" href="men.html" style="color: white;">MEN</a></li>
+              <li><a class="dropdown-item" href="women.html" style="color: white;">WOMEN</a></li>
+              <li><a class="dropdown-item" href="watches.html" style="color: white;">WATCHES</a></li>
+              <li><a class="dropdown-item" href="gifts.html" style="color: white;">GIFTS</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contactus.html" class="nav-link active" aria-disabled="true" style="color: white; font-size: 15px;">CONTACT</a>
+          </li>
+        </ul>
+
+
+        <img src="images/fashion_.webp" alt="" class="navimg">
+
+      </div>
+    </div>
+
+  </nav>
+
+
+
+
+
+
+<section>
+
+
+    <form class="contactusform" style="display: flex; flex-direction: column; align-items: center;
+    justify-content: center; text-align: start;">
+       
+        <div class="mb-3" >
+          <label for="exampleInputEmail1" class="form-label">Your Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+          
+        <div class="mb-3" >
+          <label for="exampleInputPassword1" class="form-label">Your Moblie</label>
+          <input type="tel" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3" >
+          <label for="exampleInputPassword1" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3" >
+          <label for="exampleInputPassword1" class="form-label">Write Comments Here</label>
+          <textarea type="email" class="form-control" id="exampleInputPassword1"></textarea>
+        </div>
+        
+       <div style="display: flex; justify-content: space-evenly;" > 
+        <button type="submit" class="btn button" style=" background-color: rgba(137, 74, 63, 0.99); color: white;" >Submit</button>
+        <button type="reset" class="btn button" style=" background-color: rgba(137, 74, 63, 0.99); color: white;" >Reset</button>
+       </div>
+      
+    </form>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- html code for pagination -->
+
+
+<div class="pagi d-flex w-100" >
+  
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="gifts.html" aria-label="Previous" style="border-radius: 50%; font-weight: 700;">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+
+      <li class="page-item"><a class="page-link" href="index.html" >1</a></li>
+      <li class="page-item"><a class="page-link" href="aboutus.html" >2</a></li>
+      <li class="page-item"><a class="page-link" href="men.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="women.html">4</a></li>
+      <li class="page-item"><a class="page-link" href="watches.html">5</a></li>
+      <li class="page-item"><a class="page-link" href="gifts.html">6</a></li>
+      <li class="page-item"><a class="page-link" href="contactus.html" id="pactive">7</a></li>
+
+
+      <li class="page-item">
+        <a class="page-link d-flex" href="#" aria-label="Next" style="border-radius: 50%; font-weight: 700;">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  <!-- html code of footer -->
+
+
+  <div class="extrafooter">
+
+    <div class="exfootimg">
+      <p class="exfoothead">PAY SECURELY BY</p>
+      <div class="exfootimgs">
+        <img src="images/f1.png" alt="" style="width: 46px; height: 28px;">
+        <img src="images/f2.png" alt="" style="width: 46px; height: 28px;">
+        <img src="images/f3.png" alt="" style="width: 46px; height: 28px;">
+        <img src="images/f4.png" alt="" style="width: 46px; height: 28px;">
+      </div>
+    </div>
+
+    <div class="exfootimg">
+      <p class="exfoothead">DOWNLOAD THE APP</p>
+      <div class="exfootimgs">
+        <img src="images/f5.png" alt="" style="width: 92px; height: 60px;">
+        <img src="images/f6.png" alt="" style="width: 92px; height: 60px;">
+      </div>
+    </div>
+
+    <div class="exfootimg">
+      <p class="exfoothead">VERIFIED BY</p>
+      <div class="exfootimgs">
+        <img src="images/f7.png" alt="" style="width: 40px; height: 40px;">
+        <img src="images/f8.png" alt="" style="width: 50px; height: 40px;">
+        <img src="images/f9.png" alt="" style="width: 50px; height: 40px;">
+        <img src="images/f10.png" alt="" style="width: 50px; height: 40px;">
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <footer>
+
+    <div class="fcol">
+      <ul class="ful">
+        <p class="footerhead">TOP CATEGORIES</p>
+        <div class="footertext"><a href="men.html">MEN</a></div>
+        <div class="footertext"><a href="women.html">WOMEN</a></div>
+        <div class="footertext"><a href="watches.html">WATCHES</a></div>
+        <div class="footertext"><a href="gifts.html">GIFT</a></div>
+
+      </ul>
+    </div>
+
+
+    <div class="fcol">
+
+      <ul class="ful">
+        <p class="footerhead">STORE AND SITES</p>
+        <div class="footertext"><a href="aboutus.html">ABOUT US</a></div>
+        <div class="footertext"><a href="contactus.html">CONTACT US</a></div>
+        <div class="footertext"><a href="contactus.html">CAREERS</a></div>
+
+      </ul>
+
+    </div>
+
+
+    <div class="fcol">
+      <ul class="iful">
+        <p class="footerhead">STAY IN TOUCH WITH US</p>
+
+        <div class="mail">
+          <input type="email" placeholder="Please Provide Your Emali Here" class="mail-input">
+          <div class="mail-icon"><i class="fa-regular fa-paper-plane"></i></div>
+        </div>
+
+
+
+        <p class="follow">FOLLOW US ON</p>
+        <div class="followicons"><i class="fa-brands fa-square-facebook"></i><i
+            class="fa-brands fa-square-instagram"></i><i class="fa-brands fa-square-x-twitter"></i><i
+            class="fa-brands fa-linkedin"></i></div>
+
+      </ul>
+    </div>
+
+  </footer>
+
+  <div class="last">
+    <div class="designby">Copyright © 2025 Website Design & Devloped By Nirav</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
